@@ -1,118 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marius Kahakeu Deffo | Academic Profile</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+* {margin:0; padding:0; box-sizing:border-box; font-family:Arial,sans-serif;}
+body {background:#f7f7f7; color:#333; line-height:1.6; scroll-behavior:smooth;}
+:root {--green:#4bb200; --blue:#2069cd; --red:#cd2069;}
 
-<header>
-  <nav>
-    <div class="logo">Marius Kahakeu</div>
-    <ul class="nav-links">
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#teaching">Teaching</a></li>
-      <li><a href="#conferences">Conferences</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#projects">Current Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+/* Navigation */
+header nav {display:flex; justify-content:space-between; align-items:center; padding:1rem 2rem; background:var(--blue); position:sticky; top:0; z-index:100;}
+header nav .logo {color:#fff; font-weight:bold; font-size:1.5rem;}
+header nav ul {display:flex; list-style:none; gap:1.5rem;}
+header nav ul li a {color:#fff; text-decoration:none; font-weight:500;}
+header nav ul li a:hover {color:var(--green);}
 
-<section class="hero">
-  <div class="hero-content">
-    <h1>Marius Kahakeu Deffo</h1>
-    <p>Ph.D. student & Teaching Assistant | Rutgers French Department</p>
-    <p>Research: Sociolinguistics, Didactics, Colonial & Postcolonial Studies</p>
-    <a href="assets/Marius_Kahakeu_CV.pdf" class="btn">Download CV</a>
-  </div>
-</section>
+/* Hero */
+.hero {background:var(--green); color:#fff; text-align:center; padding:6rem 2rem;}
+.hero h1 {font-size:3rem; margin-bottom:1rem;}
+.hero p {font-size:1.2rem; margin-bottom:1rem;}
+.hero .btn {display:inline-block; background:var(--blue); color:#fff; padding:0.8rem 1.5rem; border-radius:5px; text-decoration:none;}
+.hero .btn:hover {background:var(--red);}
 
-<section id="about" class="section">
-  <h2>About Me</h2>
-  <p>I am a Ph.D. student and Teaching Assistant in the <a href="https://french.rutgers.edu/academics/graduate/graduate-program-information" target="_blank">Rutgers French Department</a>. I hold a combined honours bachelor's degree in English and French from <a href="https://www.ubuea.cm/" target="_blank">University of Buea</a> and an MA in The Teaching of French as a Foreign Language.</p>
-  <p>My research focuses on Sociolinguistics, Didactics, linguistics, colonial & postcolonial studies, oral literature, migration, disasters, trauma, and diasporic studies. I am currently working on my thesis project on colonial trauma.</p>
-</section>
+/* Sections */
+.section {padding:4rem 2rem;}
+.section h2 {color:var(--red); margin-bottom:2rem; font-size:2.2rem;}
+.section ul {padding-left:1.5rem; list-style:disc; margin-top:1rem;}
+.section a {color:var(--blue); text-decoration:none;}
+.section a:hover{text-decoration:underline;}
 
-<section id="teaching" class="section">
-  <h2>Teaching</h2>
-  <ul>
-    <li>Spring 2025: Functional 121: Functional French, Rutgers University</li>
-    <li>Fall 2024: French 102: Elementary French, Rutgers University</li>
-    <li>Spring 2024: French 102: Elementary French, Rutgers University</li>
-    <li>Fall 2023: French 101: Elementary French, Rutgers University</li>
-    <li>Jan - Jun 2022: French Teacher, Beno International Bilingual Nursery & Primary School, Wokoko Buea</li>
-    <li>2020-2021: Teaching Assistant of TOFFL, Bilingual Grammar School Molyko, Cameroon</li>
-  </ul>
-</section>
+/* Publications */
+.pub-grid {display:flex; flex-wrap:wrap; gap:2rem; margin-top:1rem;}
+.pub-card {background:#fff; border-radius:10px; width:250px; padding:1rem; text-align:center; transition:all 0.3s;}
+.pub-card img {width:100%; border-radius:5px; margin-bottom:0.5rem;}
+.pub-card:hover{transform:translateY(-5px); box-shadow:0 10px 20px rgba(0,0,0,0.2);}
+.pub-card a {display:inline-block; margin-top:0.5rem; color:var(--green); font-weight:bold;}
+.pub-card a:hover{text-decoration:underline;}
 
-<section id="conferences" class="section">
-  <h2>Conferences</h2>
-  <ul>
-    <li>Dec 1, 2024: Roundtable “African hip-hop as Global Pedagogy”, ASA Conference, Chicago</li>
-    <li>Dec 6, 2024: Organizer with Patrick Chamoiseau, Rutgers University</li>
-    <li>Jun 7, 2024: “Decolonize the perception of forests in SE Cameroon”, Translation Symposium, Ghana</li>
-    <li>Apr 12, 2024: “From invisible to visible: poetics of colonial disaster in Cesaire’s Une Tempête”, Rutgers</li>
-    <li>Apr 6, 2024: Chair, Panel: Global Hip Hop as Civics Education, Rutgers</li>
-    <li>Apr 3, 2024: Co-organizer, talk with Gumman Xuman, Rutgers</li>
-    <li>Jun 16, 2023: Chair, Panel “Multilingualism in Classroom I”, University of Zululand</li>
-    <li>Jun 16, 2023: “Sociolinguistic representations of Anglophone Parents, Teachers, and Students”, University of Zululand</li>
-    <li>May 2, 2023: “The dual opposition functions of language in Seynabou Sonko’s Djinns”, Rutgers</li>
-    <li>Apr 1, 2023: “Autobiography: from an exiled self to a potential knowledge of self”, Boston College</li>
-    <li>Dec 8, 2022: “Representations of Muslim women in Algerian writings”, Rutgers</li>
-  </ul>
-</section>
-
-<section id="publications" class="section">
-  <h2>Publications</h2>
-  <div class="pub-grid">
-    <div class="pub-card">
-      <img src="assets/book1.jpg" alt="Book 1">
-      <p>2023: <strong>Duality of the conception of nature...</strong></p>
-      <a href="https://tinyurl.com/3p828ee9" target="_blank">View Book</a>
-    </div>
-    <div class="pub-card">
-      <img src="assets/book2.jpg" alt="Book 2">
-      <p>2023: <strong>Les défis du bilinguisme officiel camerounais...</strong></p>
-      <a href="https://tinyurl.com/2sbzecz2" target="_blank">View Book</a>
-    </div>
-  </div>
-</section>
-
-<section id="projects" class="section">
-  <h2>Current Projects</h2>
-  <p>Thesis Project: Colonial Trauma</p>
-  <h3>Honors & Awards</h3>
-  <ul>
-    <li>May 2023: Center for African Studies 2023 Graduate Enhancement Grant, Rutgers University</li>
-    <li>Mar 2023: Full Tuition Girard Scholarship, Institut d’Avignon</li>
-    <li>Sep 2022: Excellence Fellowship, Rutgers University</li>
-    <li>2022: University of Buea Award – Best Student in MA TOFFL</li>
-  </ul>
-</section>
-
-<section id="contact" class="section">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:km1561@scarletmail.rutgers.edu">km1561@scarletmail.rutgers.edu</a></p>
-  <p>Office: AB-4167, 15 Seminary Pl, New Brunswick, NJ 08901</p>
-</section>
-
-<footer>
-  <p>&copy; 2025 Marius Kahakeu Deffo</p>
-</footer>
-
-<script>
-  // Smooth scroll
-  document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function(e){
-      e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'});
-    });
-  });
-</script>
-
-</body>
-</html>
+/* Footer */
+footer {text-align:center; background:var(--blue); color:#fff; padding:1.5rem;}
